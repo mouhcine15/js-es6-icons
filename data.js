@@ -1,4 +1,10 @@
-[
+let name;
+let prefix;
+let family;
+let type;
+let color;
+
+const arr = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +118,38 @@
 		color: 'blue'
 	}
 ];
+
+
+let container = document.querySelector(".container");
+let box;
+let icona;
+for (let i = 0; i < 16; i++) {
+
+	box = document.createElement("div");
+	box.classList.add("box");
+	container.append(box);
+
+	
+	let nomiElementi = arr[i];
+	
+	icona = document.createElement("i");
+
+
+	icona.classList.add(family);
+	icona.classList.add(prefix);
+	icona.classList.add(name);
+	box.append(icona);	
+	
+	let text = document.createElement("h3");
+	box.append(text);
+	text.innerText = nomiElementi.name;
+};
+
+// arr.forEach((Element) => {
+// 	console.log(`
+// 		${Element.family} ${Element.prefix}${Element.name}
+// 	`
+// 	)
+// 	icona.append(Element);
+// }
+// );
