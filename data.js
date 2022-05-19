@@ -1,8 +1,3 @@
-let name;
-let prefix;
-let family;
-let type;
-let color;
 
 const arr = [
 	{
@@ -133,23 +128,15 @@ for (let i = 0; i < 16; i++) {
 	let nomiElementi = arr[i];
 	
 	icona = document.createElement("i");
+	console.log(icona);
 
+	// arr [4].name
 
-	icona.classList.add(family);
-	icona.classList.add(prefix);
-	icona.classList.add(name);
-	box.append(icona);	
+	icona.classList.add(arr[i].family);
+	icona.classList.add(arr[i].prefix + arr[i].name);
+	box.append(icona);
 	
 	let text = document.createElement("h3");
 	box.append(text);
 	text.innerText = nomiElementi.name;
 };
-
-// arr.forEach((Element) => {
-// 	console.log(`
-// 		${Element.family} ${Element.prefix}${Element.name}
-// 	`
-// 	)
-// 	icona.append(Element);
-// }
-// );
