@@ -131,12 +131,23 @@ for (let i = 0; i < 16; i++) {
 	console.log(icona);
 
 	// arr [4].name
-
+	
 	icona.classList.add(arr[i].family);
 	icona.classList.add(arr[i].prefix + arr[i].name);
+	icona.classList.add(arr[i].color);
 	box.append(icona);
 	
 	let text = document.createElement("h3");
 	box.append(text);
 	text.innerText = nomiElementi.name;
 };
+
+// milestone 2
+// const animali = icone.filter((animals) => (animals.color == "orange"));
+// console.log(animali);
+
+// const vegetabli = icone.filter((vegeta) => (vegeta.color == "green"));
+// console.log(vegetabli);
+
+// const user = icone.filter((users) => (users.color == "blue"));
+// console.log(user);

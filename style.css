@@ -17,3 +17,15 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.blue {
+    color: blue;
+}
+
+.orange {
+    color: orange;
+}
+
+.green {
+    color: green;
+}
